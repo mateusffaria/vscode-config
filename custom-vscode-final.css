@@ -31,7 +31,7 @@
 
   /* Command palette's input box placeholder. */
   .monaco-inputbox input::placeholder {
-    color: rgb(239, 241, 245) !important;
+    color: rgb(140, 143, 161)
   }
 
 
@@ -43,16 +43,6 @@
 .monaco-list-row:hover {
     background: rgba(0, 0, 0, .2) !important;
 }
-
-/* Scroll Bar */
-.slider {
-    position: absolute !important;
-    right: 1px !important;
-    width: 1px !important;
-    background: #bc9abc !important;
-    left: auto !important;
-}
-
 
 /* Project title's style at the top. */
 .monaco-workbench .part.titlebar>.titlebar-container>.titlebar-center>.window-title>.command-center .action-item.command-center-center {
@@ -71,5 +61,9 @@
 }
 
 .codicon-search::before {
+    display: none !important;
+}
+
+.decorationsOverviewRuler {
     display: none !important;
 }
