@@ -61,8 +61,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const newElement = document.createElement("div");
         newElement.setAttribute('id', 'command-blur');
 
+        const commandDialogCloseButton = document.querySelector(".action-label.codicon.codicon-close.always-visible");
+
         newElement.addEventListener('click', function() {
             newElement.remove();
+            commandDialogCloseButton.click();
         });
 
         // Append the new element as a child of the targetDiv
